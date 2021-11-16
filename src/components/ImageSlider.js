@@ -17,10 +17,16 @@ function ImageSlider() {
   return (
     <Carousel {...settings}>
       <Wrap>
+        <img src="/images/slider-badag.jpg" alt="" />
+      </Wrap>
+      <Wrap>
         <img src="/images/slider-badging.jpg" alt="" />
       </Wrap>
       <Wrap>
-        <img src="/images/slider-badag.jpg" alt="" />
+        <img src="/images/slider-scale.jpg" alt="" />
+      </Wrap>
+      <Wrap>
+        <img src="/images/slider-scales.jpg" alt="" />
       </Wrap>
     </Carousel>
   );
@@ -30,7 +36,7 @@ export default ImageSlider;
 
 const Carousel = styled(Slider)`
   margin-top: 20px;
-  overflow: hidden;
+  overflow: visible;
   ul li button {
     &:before {
       font-size: 10px;
@@ -46,7 +52,7 @@ const Carousel = styled(Slider)`
     overflow: visible;
   }
   button {
-    z-index: 1;
+    z-index: 10;
   }
 `;
 
